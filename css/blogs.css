@@ -100,3 +100,51 @@ nav {
 .featured_text a:hover {
     text-decoration: none;
 }
+
+
+.form_half {
+    width: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+form {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+form input {
+    background-color: black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+form input:focus {
+    outline: none;
+}
+
+.subscribe {
+    display: flex;
+}
+
+.subscribe button {
+    margin-left: 20px;
+}
+
+form label {
+    margin-top: 25px;
+}
+
+.subscribe_section {
+    display: flex;
+}
+
+.subscribe_section img {
+    width: 50%;
+}
