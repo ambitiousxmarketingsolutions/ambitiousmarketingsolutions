@@ -315,6 +315,7 @@ footer img {
 
     .beginning {
         background-attachment: scroll;
+        min-height: 250px;
     }
 
 }
