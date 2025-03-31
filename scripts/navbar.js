@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Check if the screen size is smaller than a laptop/desktop
     function checkScreenSize() {
-        if (window.innerWidth < 1024) {
+        if (window.innerWidth < 100000) {
             nav.style.display = "none"; // Hide menu for small screens
         } else {
             nav.style.display = "flex"; // Show menu for larger screens
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     checkScreenSize();
 
     menuToggle.addEventListener("click", function () {
-        if (window.innerWidth < 1024) {
+        if (window.innerWidth < 100000) {
             if (nav.style.display === "none" || nav.style.display === "") {
                 nav.style.display = "flex"; // Show menu
             } else {
