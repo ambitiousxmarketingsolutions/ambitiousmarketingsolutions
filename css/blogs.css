@@ -2,6 +2,11 @@
     font-family: 'Public Sans', serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     overflow-x: hidden;
 }
@@ -90,6 +95,10 @@ header h3 {
     border: none;
     font-size: 25px;
     font-weight: 700;
+}
+
+.menu-toggle:hover {
+    color: #FF5733;
 }
 
 
@@ -235,6 +244,28 @@ form label {
     width: 50%;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    width: 20%;
+    height: auto;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    left: 10%;
+}
+
+footer a:hover {
+    color: #FF5733;
+}
+
 @media screen and (max-width: 768px) {
 
 
@@ -279,5 +310,14 @@ form label {
 
     .hs-form-frame {
         width: 100%;
+    }
+
+    footer img {
+        width: 30%;
+    }
+
+    footer a {
+        margin-top: 10%;
+        left: 5%;
     }
 }
