@@ -178,6 +178,13 @@ body {
     }
 }
 
+
+.google_reviews {
+    margin-top: 5%;
+}
+
+
+/*Services section*/
 .services {
     background-color: black;
     color: white;

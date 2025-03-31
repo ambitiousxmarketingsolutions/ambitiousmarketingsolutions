@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header h1, h2 {
+    margin-left: 5%;
+}
+
+header h1 {
+    font-size: 1.25vw;
+}
+
+header h2 {
+    font-size: 1.25vw;
+    font-weight: 500;
+}
+
+
+.intro {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
+
+.intro h1 {
+    display: inline-block;
+    margin: auto;
+    margin-top: 20%;
+    font-size: 5vw;
+    text-align: center;
+}
+
+.intro img {
+    width: 50%;
+}
