@@ -313,4 +313,8 @@ footer img {
         margin-left: 5%;
     }
 
+    .beginning {
+        background-attachment: scroll;
+    }
+
 }
