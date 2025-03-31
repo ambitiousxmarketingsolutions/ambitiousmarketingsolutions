@@ -1,5 +1,12 @@
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+
 * {
-    font-family: 'Public Sans', serif;
+    font-family: "Bebas Neue", serif;
 }
 
 html {
@@ -134,9 +141,17 @@ header h3 {
     font-size: 50px;
 }
 
+.featured_text h1 {
+    font-size: 35px;
+}
+
+.featured_text p {
+    font-size: 20px;
+}
+
 .featured_text a {
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .featured_text a:hover {
@@ -189,6 +204,19 @@ header h3 {
 .listing div h3 {
     margin-top: 0;
     text-align: left;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+
+.filler {
+    background-image: url("../Images/blogbackground.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 600px;
+    margin-bottom: 2.5%;
 }
 
 
@@ -278,16 +306,26 @@ footer a:hover {
     }
 
     .menu-toggle {
-        font-size: 15px;
+        font-size: 22px;
     }
 
     header nav {
         width: 25%;
     }
 
+    .featured_text h1 {
+        font-size: 20px;
+    }
+
+    .blog-list h2 {
+        margin-top: 10%;
+    }
+
     .sub {
         font-size: 15px;
-        border: none;
+        margin-top: 30%;
+       left: 50%;
+       transform: translateX(-50%); /* Moves it back by 50% of its own width */
     }
 
     .featured h2 {
@@ -313,11 +351,18 @@ footer a:hover {
     }
 
     footer img {
-        width: 30%;
+        width: 40%;
+        margin-bottom: 10%;
     }
 
     footer a {
         margin-top: 10%;
-        left: 5%;
+        left: 50%;
+        text-wrap: nowrap;
+        transform: translateX(-50%); /* Moves it back by 50% of its own width */
+    }
+
+    .filler {
+        height: 300px
     }
 }
