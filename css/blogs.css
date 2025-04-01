@@ -368,4 +368,8 @@ footer a:hover {
     .filler {
         height: 300px
     }
+
+    .listing div h3 {
+        font-size: 25px;
+    }
 }
