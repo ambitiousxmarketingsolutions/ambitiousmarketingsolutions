@@ -324,4 +324,8 @@ footer img {
         width: 80%;
     }
 
+    .grid p {
+        font-size: 12px;
+    }
+
 }

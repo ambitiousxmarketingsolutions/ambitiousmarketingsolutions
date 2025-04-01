@@ -3,7 +3,13 @@ body {
     padding: 0;
 }
 
-header h1, h2 {
+header {
+    display: flex;
+    align-items: center;
+    height: 125px;
+}
+
+header .business {
     margin-left: 5%;
 }
 
@@ -16,6 +22,38 @@ header h2 {
     font-weight: 500;
 }
 
+nav ul {
+    display: flex;
+  
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+nav ul li a img {
+    width: 25px; /* Adjust size of icons */
+    height: auto;
+}
+
+nav {
+    position: absolute;
+    right: 5%;
+}
+
+
 
 .intro {
     display: flex;
@@ -27,10 +65,74 @@ header h2 {
     display: inline-block;
     margin: auto;
     margin-top: 20%;
-    font-size: 5vw;
+    font-size: 3.5vw;
     text-align: center;
+    width: 50%;
 }
 
 .intro img {
-    width: 50%;
+    width: 40%;
+}
+
+.orangebar {
+    width: 35%;
+    height: 20%;
+    background-color: #ff5733;
+    position: absolute;
+    left: 0;
+}
+
+
+.first-p {
+    width: 75%;
+    margin: auto;
+    margin-top: 25%;
+}
+
+
+.one-third {
+    display: flex;
+    flex-direction: column;     /* Stack child elements vertically */
+    justify-content: center;    /* Vertically center the section contents */
+    align-items: center;        /* Horizontally center the section contents */
+    width: 50%;                 /* Control the width of the section */
+    margin: 0 auto;
+    margin-left: 15%;            /* Automatically adjust margins to center horizontally */
+    text-align: center;         /* Center the text content */
+    padding: 20px; 
+    text-align: left;             /* Optional: Adds some padding around the section */
+}
+
+.one-third h2 {
+    margin-top: 15%;
+}
+
+
+.one-third ol {
+    list-style-type: decimal;   /* Display list numbers */
+    width: 75%;        /* Ensure the ordered list takes up the full width */
+    z-index: 1;
+}
+
+/* Optional: Add margin to <li> elements to give spacing between each item */
+.one-third ol li {
+    margin-bottom: 20px;
+}
+
+/* Style for headings (optional for more control) */
+.one-third h2, .one-third h3 {
+    margin-bottom: 10px;  /* Adjust space between headings and text */
+}
+
+.two-third img {
+    width: 40%;
+    position: absolute;
+    right: 0;
+}
+
+.two-third ol {
+    background-color: white;
+    padding-top: 10%;
+    margin: 0 auto; /* Centers the <ol> within its container */
+    display: table;  /* Allows margin auto to work */
 }
