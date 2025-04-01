@@ -37,7 +37,6 @@ header h2 {
 
 nav ul {
     display: flex;
-  
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -92,6 +91,12 @@ nav {
     padding-left: 2%;
     padding-right: 2%;
     padding: 1.5%;
+    text-decoration: none;
+}
+
+.cta:hover {
+    background-color: white;
+    color: black;
 }
 
 .intro img {
@@ -104,9 +109,11 @@ nav {
     width: 60%;
     margin: auto;
     margin-top: 10%;
+    border-top: 4px solid #ff5733;
+    padding: 5%;
 }
 
-.introimg, .two-third img, .three-third img {
+.introimg, .two-third img, .three-third img, .lastimage {
     width: 80%;
     margin-top: 10%;
     margin-bottom: 10%;
@@ -127,9 +134,25 @@ nav {
 
 
 .one-third .impact {
-    list-style-type: decimal;   /* Display list numbers */
     width: 75%;        /* Ensure the ordered list takes up the full width */
     z-index: 1;
+}
+
+.finalcta {
+    background-color: black;
+    color: white;
+    padding: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.lastsection {
+    border-bottom: 5px solid #ff5733;
+    margin-bottom: 10%;
 }
 
 /* Optional: Add margin to <li> elements to give spacing between each item */
@@ -140,9 +163,13 @@ nav {
 
 @media screen and (max-width: 768px) {
 
-    body {
-        margin: 5%;
+    html {
+        text-align: center;
     }
+    body {
+        margin-left: 5%;
+    }
+
 
     header nav {
         display: none; /* Hide the nav links */
@@ -162,14 +189,38 @@ nav {
 
     .menu-toggle {
         display: block; /* Show menu button */
-        margin: auto;
+        margin-left: 70%;
         font-family: 'Roboto Slab', serif;
+        background: none;
+        border: none;
+        font-size: 25px;
+        text-decoration: underline;
     }
 
     .business {
         position: absolute;
     }
 
+    ul, ol {
+        padding: 0;
+
+    }
+
+
+    .one-third, .two-third, .three-third {
+        width: 90%;
+    }
+
+    .cta {
+        padding-left: 4%;
+        padding-right: 4%;
+        padding: 4%;
+    }
+
+
+    header h1, header h2 {
+        font-size: 14px;
+    }
 }
 
 
