@@ -126,30 +126,38 @@ nav {
     padding: 5%;
 }
 
-.introimg, .two-third img, .three-third img, .lastimage {
-    width: 95%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-
-
-.one-third, .two-third, .three-third, .lastsection {
+.image-container {
     display: flex;
-    flex-direction: column;     /* Stack child elements vertically */
-    justify-content: center;    /* Vertically center the section contents */
-    align-items: center;        /* Horizontally center the section contents */
-    width: 80%;                 /* Control the width of the section */
-    margin: 0 auto;           /* Automatically adjust margins to center horizontally */
-    text-align: center;         /* Center the text content */ 
-            /* Optional: Adds some padding around the section */
+    justify-content: center;
+    align-items: center;
+}
+
+.content img {
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.content h2 {
+    font-size: 3.5vw;
+}
+
+.content h3 {
+    font-size: 2vw;
 }
 
 
-
-.one-third .impact {
-    width: 75%;        /* Ensure the ordered list takes up the full width */
-    z-index: 1;
+ .content {
+    display: flex;
+    flex-direction: column;     
+    justify-content: center;    
+    align-items: center;        
+    width: 80%;                 
+    margin: 0 auto;           
+    text-align: center;     
 }
+
+
 
 .finalcta {
     background-color: black;
@@ -161,6 +169,8 @@ nav {
     font-family: 'Roboto Slab', serif;
     margin-top: 5%;
     margin-bottom: 5%;
+    width: 20%;
+    margin: auto;
 }
 
 .finalcta:hover {
@@ -169,9 +179,9 @@ nav {
     border: 1px solid black;
 }
 
-.lastsection {
+.content {
     border-bottom: 5px solid #ff5733;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 /* Optional: Add margin to <li> elements to give spacing between each item */
@@ -184,9 +194,14 @@ nav {
 
     html {
         text-align: center;
+        overflow-x: hidden;
     }
     body {
         margin-left: 5%;
+    }
+
+    .intro {
+        margin-bottom: 10%;
     }
 
 
@@ -230,9 +245,9 @@ nav {
 
     }
 
-
-    .one-third, .two-third, .three-third {
+    .first-p {
         width: 90%;
+        text-align: center;
     }
 
     .cta {
@@ -246,6 +261,18 @@ nav {
         width: 70%;
         height: auto;
         margin-right: 100%;
+    }
+
+    .finalcta {
+        width: 75%;
+    }
+
+    .content h2 {
+        font-size: 8vw;
+    }
+
+    .content h3 {
+        font-size: 5vw;
     }
 }
 
