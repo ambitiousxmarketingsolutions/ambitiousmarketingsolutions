@@ -116,6 +116,7 @@ mark {
 .content p {
     margin-top: 20px;
     line-height: 2;
+    margin: auto;
 }
 
 
