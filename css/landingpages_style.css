@@ -3,6 +3,10 @@ html {
     background-color: whitesmoke;
 }
 
+main {
+    margin-top: 175px;
+}
+
 body {
     margin: 2.5%;
     padding: 0;
@@ -16,14 +20,22 @@ header {
     display: flex;
     align-items: center;
     height: 125px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+}
+
+.business img {
+    width: 25%;
+    height: auto;
+    margin-right: 100%;
 }
 
 .menu-toggle {
     display: none;
-}
-
-header .business {
-    margin-left: 5%;
 }
 
 header h1 {
@@ -40,6 +52,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    background-color: black;
 }
 
 nav ul li {
@@ -48,7 +61,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #000;
+    color: white;
 }
 
 nav ul li a:hover {
@@ -114,7 +127,7 @@ nav {
 }
 
 .introimg, .two-third img, .three-third img, .lastimage {
-    width: 80%;
+    width: 95%;
     margin-top: 10%;
     margin-bottom: 10%;
 }
@@ -150,6 +163,12 @@ nav {
     margin-bottom: 5%;
 }
 
+.finalcta:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
 .lastsection {
     border-bottom: 5px solid #ff5733;
     margin-bottom: 10%;
@@ -182,6 +201,10 @@ nav {
         background-color: white;
     }
 
+    header nav ul {
+        flex-direction: column;
+    }
+
     header nav a {
         display: block;
         padding: 15px;
@@ -195,6 +218,7 @@ nav {
         border: none;
         font-size: 25px;
         text-decoration: underline;
+        color: white;
     }
 
     .business {
@@ -218,8 +242,10 @@ nav {
     }
 
 
-    header h1, header h2 {
-        font-size: 14px;
+    .business img {
+        width: 70%;
+        height: auto;
+        margin-right: 100%;
     }
 }
 
