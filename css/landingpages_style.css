@@ -192,16 +192,15 @@ nav {
 
 @media screen and (max-width: 768px) {
 
+    header {
+        overflow-x: hidden;
+    }
+
     html {
         text-align: center;
-        overflow-x: hidden;
     }
     body {
         margin-left: 5%;
-    }
-
-    .intro {
-        margin-bottom: 10%;
     }
 
 
@@ -245,9 +244,9 @@ nav {
 
     }
 
-    .first-p {
-        width: 90%;
-        text-align: center;
+
+    main {
+        width: 90vw;
     }
 
     .cta {
@@ -263,16 +262,16 @@ nav {
         margin-right: 100%;
     }
 
-    .finalcta {
-        width: 75%;
-    }
-
     .content h2 {
         font-size: 8vw;
     }
 
     .content h3 {
-        font-size: 5vw;
+        font-size: 6vw;
+    }
+
+    .finalcta {
+        width: 60%;
     }
 }
 
