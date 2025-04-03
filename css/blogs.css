@@ -114,51 +114,16 @@ header h3 {
 
 /*The first section of the page*/
 
-.latestblog {
-    display: flex;
-    width: 90%;
-    margin: auto;
+.intro h1 {
     text-align: center;
-}
-
-
-.latestblog img {
-    width: 50%;
-}
-
-.featured_text {
-    width: 50%;
-    color: white;
-    background-color: black;
-}
-
-.featured_text h1, p {
-    margin-top: 25%;
-    margin-bottom: 10%;
-    font-weight: 400;
-}
-
-.featured_text h2 {
-    width: 50%;
     margin: auto;
     font-size: 50px;
 }
 
-.featured_text h1 {
-    font-size: 35px;
-}
-
-.featured_text p {
-    font-size: 20px;
-}
-
-.featured_text a {
-    color: white;
-    text-decoration: none;
-}
-
-.featured_text a:hover {
-    text-decoration: none;
+.intro img {
+    width: 30%;
+    margin: auto;
+    display: block;
 }
 
 /*The blog listing section*/
@@ -171,9 +136,11 @@ header h3 {
 }
 
 .listing {
-    width: 100%;
-    display: flex; /* Makes child divs align in one row */
-    gap: 20px; /* Adds space between items */
+    margin: auto;
+    width: 80%;
+    display: grid; /* Makes child divs align in one row */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* Adds space between items */
     justify-content: center; /* Centers the row */
     flex-wrap: wrap; /* Allows wrapping if the screen is too small */
 }
@@ -181,7 +148,8 @@ header h3 {
 .listing div {
     display: flex;
     flex-direction: column; /* Keeps image, p, and h3 stacked */
-    width: 25%; /* Adjust as needed */
+    width: 70%; /* Adjust as needed */
+    margin: auto;
 }
 
 .listing div a {
@@ -212,7 +180,7 @@ header h3 {
 }
 
 
-.filler {
+.intro {
     background-image: url("../Images/blog-images/blogbackground.jpeg");
     background-position: center;
     background-size: cover;
@@ -299,13 +267,18 @@ footer a:hover {
 
 @media screen and (max-width: 768px) {
 
+    header {
+        height: 150px;
+    }
+
 
     header h1 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     header h3 {
         font-size: 15px;
+        margin-bottom: 10%;
     }
 
     .menu-toggle {
@@ -325,8 +298,9 @@ footer a:hover {
     }
 
     .sub {
-        font-size: 15px;
-        margin-top: 30%;
+        font-size: 18px;
+        padding-top: 1%;
+        margin-top: 20%;
        left: 50%;
        transform: translateX(-50%); /* Moves it back by 50% of its own width */
     }
@@ -371,5 +345,18 @@ footer a:hover {
 
     .listing div h3 {
         font-size: 25px;
+    }
+
+    .intro h1 {
+        text-align: center;
+        margin: auto;
+        padding-top: 0%;
+        font-size: 50px;
+    }
+    
+    .intro img {
+        width: 80%;
+        margin: auto;
+        display: block;
     }
 }
