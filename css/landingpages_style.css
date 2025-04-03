@@ -204,6 +204,10 @@ nav {
     }
 
 
+    .first-p {
+        width: 90%;
+    }
+
     header nav {
         display: none; /* Hide the nav links */
         flex-direction: column;
