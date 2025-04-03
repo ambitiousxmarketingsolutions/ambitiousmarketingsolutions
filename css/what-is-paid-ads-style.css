@@ -86,6 +86,7 @@ nav {
     align-items: center;
 }
 
+
 .intro h1 {
     margin-top: 15%;
     font-size: 3.5vw;
@@ -124,7 +125,7 @@ nav {
 }
 
 .content img {
-    width: 80%;
+    width: 90%;
     margin-top: 5%;
     margin-bottom: 5%;
 }
@@ -164,6 +165,10 @@ nav {
     margin: auto;
 }
 
+.cta-container {
+    margin-top: 5%;
+}
+
 .finalcta:hover {
     background-color: white;
     color: black;
@@ -173,6 +178,7 @@ nav {
 .content {
     border-bottom: 5px solid #ff5733;
     margin-bottom: 5%;
+    padding-bottom: 2.5%;
 }
 
 /* Optional: Add margin to <li> elements to give spacing between each item */
@@ -241,7 +247,7 @@ nav {
 
 
     main {
-        width: 90vw;
+        width: 80vw;
     }
 
     .cta {
@@ -267,6 +273,14 @@ nav {
 
     .finalcta {
         width: 60%;
+    }
+
+    .cta-container {
+        margin-top: 10%;
+    }
+
+    .intro {
+        margin-top: 125px;
     }
 }
 
