@@ -143,6 +143,8 @@ main {
     font-family: 'Kanit', sans-serif;
     font-size: large;
     padding: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
     height: auto;
     color: white;
     background-color: black;
@@ -153,6 +155,14 @@ main {
     color: black;
     border: 2px solid black;
 }
+
+main p {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    font-size: 25px;
+}
+
 
 .floater {
     position: fixed;
@@ -194,6 +204,10 @@ footer a {
 
 .display h2 {
     font-size: 18px;
+}
+
+main p {
+    font-size: 16px;
 }
 
 }
