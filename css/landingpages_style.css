@@ -217,6 +217,8 @@ nav {
 
     header nav {
         display: none;
+        position: absolute;
+        right: 0%;
     }
 
     .menu-toggle {

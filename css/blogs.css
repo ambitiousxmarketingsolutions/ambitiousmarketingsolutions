@@ -37,7 +37,7 @@ header nav {
     width: 15%;
     text-align: center;
     position: absolute;
-    top: 125px;
+    top: 100px;
     height: 25%;
     justify-content: center;
     right: 0;
@@ -100,7 +100,7 @@ header h3 {
 }
 
 .menu-toggle {
-    right: 5%;
+    right: 2.5%;
     background: none;
     border: none;
     font-size: 25px;
@@ -138,6 +138,7 @@ header h3 {
 
 .listing {
     margin: auto;
+    margin-bottom: 10%;
     width: 80%;
     display: grid; /* Makes child divs align in one row */
     grid-template-columns: repeat(2, 1fr);
@@ -151,6 +152,7 @@ header h3 {
     flex-direction: column; /* Keeps image, p, and h3 stacked */
     width: 70%; /* Adjust as needed */
     margin: auto;
+    border: 1px solid lightgray;
 }
 
 .listing div a {
@@ -171,6 +173,7 @@ header h3 {
 .listing div p {
     margin-top: 10%;
     margin-bottom: 5%;
+    margin-left: 5%;
 }
 
 .listing div h3 {
@@ -178,6 +181,7 @@ header h3 {
     text-align: left;
     font-size: 35px;
     margin-bottom: 0;
+    margin-left: 5%;
 }
 
 
