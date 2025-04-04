@@ -282,6 +282,10 @@ nav {
     .intro {
         margin-top: 125px;
     }
+
+    .intro h1 {
+        font-size: 7vw;
+    }
 }
 
 
