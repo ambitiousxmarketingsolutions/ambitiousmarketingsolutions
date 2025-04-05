@@ -38,7 +38,7 @@ header nav {
     width: 15%;
     text-align: center;
     position: absolute;
-    top: 100px;
+    top: 125px;
     height: 25%;
     justify-content: center;
     right: 0;
@@ -101,7 +101,7 @@ header h3 {
 }
 
 .menu-toggle {
-    right: 2.5%;
+    right: 2%;
     background: none;
     border: none;
     font-size: 25px;
@@ -293,6 +293,7 @@ footer a:hover {
     }
 
     header nav {
+        top: 100px;
         width: 25%;
     }
 
@@ -365,5 +366,9 @@ footer a:hover {
         width: 80%;
         margin: auto;
         display: block;
+    }
+
+    .listing div {
+        width: 80%;
     }
 }
