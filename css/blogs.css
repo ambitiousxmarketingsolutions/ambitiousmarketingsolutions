@@ -29,6 +29,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 200px;
+    border-bottom: 12px solid black;
 }
 
 header nav {
@@ -153,6 +154,7 @@ header h3 {
     width: 70%; /* Adjust as needed */
     margin: auto;
     border: 1px solid lightgray;
+    overflow-wrap: break-word;
 }
 
 .listing div a {
@@ -349,7 +351,7 @@ footer a:hover {
     }
 
     .listing div h3 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .intro h1 {
