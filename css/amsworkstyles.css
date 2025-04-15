@@ -1,3 +1,7 @@
+* {
+    font-family: 'Kanit', sans-serif;
+}
+
 body {
     animation: transitionIn 4s;
     z-index: 3;
@@ -23,7 +27,7 @@ header {
     justify-content: center;
     position: fixed;
     left: 0;
-    top: 0;
+    top: 6%;
     width: 100%;
     z-index: 1000;
 }
@@ -43,10 +47,23 @@ header nav a {
     color: black;
     transition: color 0.3s ease-in-out;
     z-index: 2;
+    font-weight: bold;
 }
 
 header nav a:hover {
     color: #FF5733;
+}
+
+.socialimages {
+    display: flex;
+    gap: 35px;
+    position: absolute;
+    left: 5%;
+}
+
+.socialimages img {
+    width: 30px;
+    height: 30px;
 }
 
 .logo {
@@ -57,24 +74,40 @@ header nav a:hover {
 }
 
 
-.menu-toggle {
-    display: none; /* Hidden by default */
-    font-size: 24px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
-
-
-
 main {
     position: absolute;
-    top: 200px;
+    top: 8%;
     z-index: 1;
     text-align: center;
     height: 100%;
+}
+
+.cta {
+    text-decoration: none;
+    background-color: white;
+    border: 3px solid #FF5733;
+    color: black;
+    font-family: 'Kanit', serif;
+    display: inline-block;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding: 1.5%;
+    display: block;
+    margin: auto;
+    width: fit-content;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+
+.cta:hover {
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+
+    
 }
 
 .display {
@@ -185,6 +218,15 @@ position: relative;
     height: 80px;
 }
 
+.socialimages {
+    gap: 15px;
+}
+
+.socialimages img {
+    width: 25px;
+    height: 25px;
+}
+
 .logo {
     width: 30%;
 }
@@ -208,9 +250,13 @@ footer a {
 
 main p {
     font-size: 16px;
+    width: 75%;
+}
+
+header .links {
+    position: absolute;
 }
 
 }
 
    
-
