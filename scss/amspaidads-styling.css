@@ -1,0 +1,77 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  margin-top: 2.5%;
+  width: 100%;
+  z-index: 1000;
+}
+
+header .links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 40px;
+  z-index: 2;
+}
+
+header nav a {
+  font-family: "Kanit", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease-in-out;
+  z-index: 2;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: #FF5733;
+}
+
+.socialimages {
+  display: flex;
+  gap: 35px;
+  position: absolute;
+  left: 5%;
+}
+
+.socialimages img {
+  width: 30px;
+  height: 30px;
+}
+
+.logo {
+  position: absolute;
+  right: 5%;
+  width: 15%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    position: relative;
+    height: 80px;
+  }
+  .socialimages {
+    gap: 15px;
+  }
+  .socialimages img {
+    width: 25px;
+    height: 25px;
+  }
+  .logo {
+    width: 30%;
+  }
+  header .links {
+    position: absolute;
+  }
+}
+* {
+  font-family: "Kanit", serif;
+}
+
+h1 {
+  font-size: 3rem;
+}/*# sourceMappingURL=amspaidads-styling.css.map */
