@@ -72,6 +72,50 @@ header nav a:hover {
   font-family: "Kanit", serif;
 }
 
+* {
+  font-family: "Kanit", serif;
+}
+
+.cta {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border: 3px solid #FF5733;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 0.75%;
+  padding-bottom: 0.75%;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1.5vw;
+}
+
+.cta:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+@media screen and (max-width: 768px) {
+  .cta {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    font-size: 5vw;
+  }
+}
 h1 {
   font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }/*# sourceMappingURL=amspaidads-styling.css.map */
