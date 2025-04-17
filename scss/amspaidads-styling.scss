@@ -45,3 +45,23 @@ h1 {
     width: 40%;
 }
 
+@media screen and (max-width: 768px) {
+
+    p {
+        font-size: $font-size-p-mobile;
+    }
+
+    .section2 p {
+        width: 85%;
+    }
+
+    .section2 .img1 {
+        width: 100%;
+    }
+    
+    .section2 .img2 {
+        width: 75%;
+    }
+
+}
+

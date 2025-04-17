@@ -156,4 +156,19 @@ h1 {
 
 .section2 .img2 {
   width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 0.95rem;
+  }
+  .section2 p {
+    width: 85%;
+  }
+  .section2 .img1 {
+    width: 100%;
+  }
+  .section2 .img2 {
+    width: 75%;
+  }
 }/*# sourceMappingURL=amspaidads-styling.css.map */
