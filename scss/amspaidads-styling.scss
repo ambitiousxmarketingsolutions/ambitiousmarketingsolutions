@@ -8,3 +8,40 @@ h1 {
     font-size: $font-size-h1;
     @include center(horizontal);
 }
+
+.section2 {
+    margin-top: 5%;
+    @include center(horizontal);
+    @include flex-column();
+
+    h2 {
+        font-size: $font-size-h2;
+    }
+
+    p {
+        width: 65%;
+        margin: auto;
+        margin-top: 2.5%;
+        font-size: $font-size-p
+    }
+
+}
+
+.paidad-assets {
+    @include flex();
+
+    div {
+        @include flex-column();
+        width: 50%;
+        @include center(vertical);
+    }
+}
+
+.section2 .img1 {
+    width: 50%;
+}
+
+.section2 .img2 {
+    width: 40%;
+}
+
