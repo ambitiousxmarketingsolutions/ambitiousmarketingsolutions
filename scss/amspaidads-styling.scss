@@ -45,6 +45,29 @@ h1 {
     width: 40%;
 }
 
+ul {
+    list-style: none;
+    text-align: left;
+
+    li {
+        font-size: $font-size-p;
+        margin-top: 5%;
+    }
+}
+
+.section3 {
+    @include flex();
+    @include center(horizontal);
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    gap: 25px;
+
+    img {
+        width: 45%;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     p {
@@ -61,6 +84,16 @@ h1 {
     
     .section2 .img2 {
         width: 75%;
+    }
+
+    .section3 {
+        @include flex-column();
+        flex-direction: column-reverse;
+
+        img {
+            width: 100%;
+            margin: auto;
+        }
     }
 
 }
