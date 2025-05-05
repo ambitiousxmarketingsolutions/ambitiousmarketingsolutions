@@ -1,0 +1,224 @@
+
+@import '../../../scss/partials/typography';
+
+$primary-color: #000; // Black - strong and bold
+$accent-color: #ff4c29; // Vibrant accent for CTAs
+$background-color: #fdfdfd;
+$gray: #777;
+
+body {
+  color: black;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: $primary-color;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+
+  .title h1 {
+    font-size: $font-size-h2;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+
+  .sub {
+    background: $accent-color;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+
+    &:hover {
+      background: darken($accent-color, 10%);
+    }
+  }
+
+  .menu-toggle {
+    background: none;
+    color: white;
+    border: 2px solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+  }
+
+  nav.links {
+    display: flex;
+    gap: 1rem;
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+}
+
+.intro {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-image: url('../../../Images/blog-images/blogbackground.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  img {
+    width: 35%;
+    margin-bottom: -5%;
+  }
+
+  h1 {
+    font-size: 4rem;
+    color: white
+  }
+}
+
+.blog-list {
+  padding: 2rem;
+
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .listing {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+
+    div {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        display: block;
+        padding: 1rem;
+
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+          border-bottom: 1px solid #eee;
+        }
+
+        p {
+          font-size: 0.9rem;
+          color: $gray;
+          margin: 0.5rem 0;
+        }
+
+        h3 {
+          font-size: 1.2rem;
+          font-weight: bold;
+          color: $primary-color;
+          margin: 0.5rem 0 0;
+        }
+      }
+    }
+  }
+}
+
+.subscribe_section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #fafafa;
+  padding: 3rem 2rem;
+  gap: 2rem;
+
+  .form_half {
+    max-width: 500px;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hs-form-frame {
+      width: 100%;
+    }
+  }
+
+  img {
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+footer {
+  background: $primary-color;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+
+  img {
+    max-width: 100px;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: $accent-color;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .menu-toggle {
+      display: block;
+    }
+
+    nav.links {
+      flex-direction: column;
+      width: 100%;
+      display: none;
+
+      a {
+        padding: 0.5rem 0;
+      }
+    }
+  }
+
+  .subscribe_section {
+    flex-direction: column;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

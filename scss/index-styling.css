@@ -24,6 +24,65 @@
 }
 
 * {
+  font-family: "Kanit", serif;
+}
+
+.cta {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(135deg, #000000, #222222);
+  border: 3px solid #FF5733;
+  padding: 0.75em 4em;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.5vw;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+.cta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #FF5733, #ff8c42);
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+
+.cta:hover {
+  color: black;
+  border-color: #000;
+  transform: scale(1.05);
+}
+
+.cta:hover::before {
+  left: 0;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+@media screen and (max-width: 768px) {
+  .cta {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    font-size: 5vw;
+  }
+}
+* {
   margin: 0;
   padding: 0;
 }
@@ -62,31 +121,6 @@ main {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity for darkness (0.5 means 50% opacity) */
   z-index: 0; /* Place it behind the content */
-}
-
-.cta {
-  text-decoration: none;
-  background-color: black;
-  color: white;
-  display: inline-block;
-  padding-left: 2%;
-  padding-right: 2%;
-  padding: 1.5%;
-  display: block;
-  margin: auto;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-top: 5%;
-  margin-bottom: 8%;
-  border-radius: 25px;
-  font-weight: 600;
-  font-size: 1.5vw;
-}
-
-.cta:hover {
-  background-color: white;
-  color: black;
-  border: 3px solid #FF5733;
 }
 
 .content, .middle {
@@ -253,17 +287,40 @@ body {
 .grid a {
   background-color: whitesmoke;
   color: black;
-  padding: 2%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 2% 5%;
   text-decoration: none;
   display: inline-block;
   margin-top: 2%;
   margin-bottom: 10%;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.grid a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #FF5733, #ffc371);
+  z-index: -1;
+  transition: all 0.4s ease;
 }
 
 .grid a:hover {
-  border: 3px solid #FF5733;
+  color: white;
+  border-color: #FF5733;
+  transform: scale(1.03);
+}
+
+.grid a:hover::before {
+  left: 0;
 }
 
 footer {
